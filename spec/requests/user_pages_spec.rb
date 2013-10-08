@@ -4,10 +4,10 @@ describe "User pages" do
 
 	subject { page }
 
-	desribe "signup page" do
+	describe "signup page" do
 		before { visit signup_path }
 
 		it { should have_content('Sign up') }
-		it { shoud have_title(full_title('Sign up')) }
+		it { should have_title(full_title('Sign up')) }
 	end
 end
