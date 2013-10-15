@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20131013234739) do
     t.datetime "updated_at"
   end
 
+  add_index "products", ["name"], name: "index_products_on_name", unique: true
+
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
